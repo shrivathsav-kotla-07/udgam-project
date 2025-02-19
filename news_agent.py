@@ -72,3 +72,7 @@ def get_summaries(category, date):
     if not articles:
         return "No summaries found."
     return "\n".join(f"- **{article['title']}**: {article['summary']}" for article in articles)
+
+if __name__ == "__main__":
+    save_news_data("sports")
+    print("fetched news")
